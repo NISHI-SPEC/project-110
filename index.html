@@ -1,0 +1,79 @@
+<head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css"
+        href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<script src="main.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <body>
+        <center>
+        <h1 class="btn btn-warning" id="title">HAND GESTURE WEB APP
+            <hr>
+            <span>&#128077;</span>
+            <span>&#128076;</span>
+            <span>&#9996;</span>
+            <span>&#9994;</span>
+            <span>&#128079;</span>
+            <span>&#129304;</span>
+            
+    </h1>
+    <br><br>
+    <h3 class="bla">Take a selfie of a gesture to know about it's meaning</h3>
+    <bR>
+        <h4 class="bla">The following gesture are trained to identify</h4>
+
+        <h2>
+            <span>&#128076;</span>
+            <span>&#128077;</span>
+            <span>&#9996;</span>
+        </h2>
+        <br><br>
+        <br><Br>
+            <div  class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <H2 class="webcam-text">Webcam view :</H2>
+              <br>
+              <div id="camera"></div>
+              <br>
+              <button onclick="take_snapshot()" class="btn btn-success">Take snapshot</button>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <h1 id="bla3">Prediction</h1>
+                <h3 class="bla2" id="posture">HAND GESTURE : <span class="bla2" id="posture_result"></span></h3>
+                <h3 class="bla2" id="acuuracy">Emoji : <span class="bla2" id="acuuracy_result"></span></h3>
+              </div>
+
+              <div  class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <H2 class="webcam-text">Result :</H2>
+                <br>
+                <div id="result"></div>
+                <br>
+                <button onclick="identify()" class="btn btn-success">Identify</button>
+              </div>
+</center>
+    </body>
+    </html>
+
+</body>
